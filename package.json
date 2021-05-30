@@ -1,0 +1,39 @@
+{
+  "name": "nextjs-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "lint": "eslint --ext ts,tsx --ignore-path .gitignore src",
+    "lint:fix": "eslint --ext ts,tsx --ignore-path .gitignore --fix src",
+    "format": "prettier 'src/**/*.{ts,tsx}' --check",
+    "format:fix": "prettier 'src/**/*.{ts,tsx}' --write",
+    "prepare": "husky install",
+    "test": "jest"
+  },
+  "dependencies": {
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/react": "17.0.8",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.3",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0",
+    "ts-jest": "^27.0.1",
+    "typescript": "4.3.2"
+  }
+}

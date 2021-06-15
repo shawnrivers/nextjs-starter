@@ -5,6 +5,7 @@ module.exports = {
     sourceType: 'module',
   },
   extends: [
+    'next',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',

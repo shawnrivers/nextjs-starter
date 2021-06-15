@@ -1,9 +1,8 @@
-This is a Next.js starter with the following setup:
+This is a Next.js starter with the following setup for you:
 
-- Typescript
-- ESLint
-- Prettier
-- Jest
-- Lint-staged
-- Husky
-- GitHub Actions
+- JavaScript: Typescript
+- Linter: ESLint
+- Formatter: Prettier
+- Test: Jest
+- Git hooks: Lint-staged & Husky
+- CI: GitHub Actions

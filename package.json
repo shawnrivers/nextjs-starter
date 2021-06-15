@@ -6,12 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "prepare": "husky install",
     "type-check": "tsc",
     "lint": "eslint --ext ts,tsx --ignore-path .gitignore src",
     "lint:fix": "eslint --ext ts,tsx --ignore-path .gitignore --fix src",
     "format": "prettier 'src/**/*.{ts,tsx}' --check",
     "format:fix": "prettier 'src/**/*.{ts,tsx}' --write",
-    "prepare": "husky install",
     "test": "jest"
   },
   "dependencies": {

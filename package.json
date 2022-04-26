@@ -10,8 +10,8 @@
     "type-check": "tsc",
     "lint": "eslint --ext js,jsx,ts,tsx .",
     "lint:fix": "eslint --ext js,jsx,ts,tsx --fix .",
-    "format": "prettier '**/*.{js,jsx,ts,tsx}' --check",
-    "format:fix": "prettier '**/*.{js,jsx,ts,tsx}' --write",
+    "format": "prettier '**/*.{js,jsx,ts,tsx,json,md}' --check",
+    "format:fix": "prettier '**/*.{js,jsx,ts,tsx,json,md}' --write",
     "test": "jest"
   },
   "dependencies": {

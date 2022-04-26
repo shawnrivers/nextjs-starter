@@ -8,10 +8,10 @@
     "start": "next start",
     "prepare": "husky install",
     "type-check": "tsc",
-    "lint": "eslint --ext ts,tsx --ignore-path .gitignore src",
-    "lint:fix": "eslint --ext ts,tsx --ignore-path .gitignore --fix src",
-    "format": "prettier 'src/**/*.{ts,tsx}' --check",
-    "format:fix": "prettier 'src/**/*.{ts,tsx}' --write",
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "lint:fix": "eslint --ext js,jsx,ts,tsx --fix .",
+    "format": "prettier '**/*.{js,jsx,ts,tsx}' --check",
+    "format:fix": "prettier '**/*.{js,jsx,ts,tsx}' --write",
     "test": "jest"
   },
   "dependencies": {

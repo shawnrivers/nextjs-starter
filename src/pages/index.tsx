@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <main>
+    <main className="m-8">
       <Heading text="Next.js Starter" />
     </main>
   );

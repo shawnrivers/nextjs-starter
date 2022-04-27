@@ -2,11 +2,11 @@ name: Auto Merge Dependabot
 
 on:
   workflow_run:
+    workflows:
+      - Check
+      - 'Integration Test'
     types:
       - completed
-    workflows:
-      - check
-      - integration-test
   pull_request_target:
     branches:
       - update-dependencies
@@ -14,10 +14,10 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-      - if: ${{ github.event.workflow_run.conclusion == 'success' }}
-        name: Merge
+      - name: Merge
         uses: ridedott/merge-me-action@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

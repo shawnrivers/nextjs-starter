@@ -35,3 +35,7 @@ yarn-error.log*
 
 # TS build info
 tsconfig.tsbuildinfo
+
+# Cypress
+/cypress/screenshots
+/cypress/videos

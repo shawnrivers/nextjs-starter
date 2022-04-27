@@ -8,13 +8,16 @@
     "start": "next start",
     "prepare": "husky install",
     "type-check": "tsc",
+    "type-check-cypress": "tsc -p cypress/tsconfig.json",
     "lint": "eslint --ext js,jsx,ts,tsx .",
     "lint:fix": "eslint --ext js,jsx,ts,tsx --fix .",
     "format": "prettier '**/*.{js,jsx,ts,tsx,json,md}' --check",
     "format:fix": "prettier '**/*.{js,jsx,ts,tsx,json,md}' --write",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run"
   },
   "dependencies": {
     "next": "^12.1.5",
@@ -40,6 +43,7 @@
     "@typescript-eslint/parser": "^5.21.0",
     "autoprefixer": "^10.4.5",
     "babel-loader": "^8.2.5",
+    "cypress": "^9.6.0",
     "eslint": "^8.14.0",
     "eslint-config-next": "^12.1.5",
     "eslint-config-prettier": "^8.5.0",

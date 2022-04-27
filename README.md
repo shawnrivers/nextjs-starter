@@ -4,6 +4,6 @@ This is a Next.js starter with the following setup for you:
 - CSS: Tailwind CSS
 - Linter: ESLint
 - Formatter: Prettier
-- Test: Jest, React Testing Library, Storybook
+- Test: Jest, React Testing Library, Storybook, Cypress
 - Git hooks: Lint-staged & Husky
 - CI: GitHub Actions

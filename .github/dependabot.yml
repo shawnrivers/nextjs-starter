@@ -5,3 +5,5 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
+    target-branch: update-dependencies
+    open-pull-requests-limit: 100

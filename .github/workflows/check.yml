@@ -3,7 +3,7 @@ name: Check
 on: [push]
 
 jobs:
-  check:
+  main:
     runs-on: ubuntu-latest
 
     steps:

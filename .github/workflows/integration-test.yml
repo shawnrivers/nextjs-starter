@@ -3,7 +3,7 @@ name: Integration Test
 on: [push]
 
 jobs:
-  integration-test:
+  main:
     runs-on: ubuntu-latest
 
     steps:

@@ -10,10 +10,6 @@ on:
   pull_request_target:
     branches:
       - update-dependencies
-    types:
-      - opened
-      - reopened
-      - synchronize
 
 jobs:
   main:

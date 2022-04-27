@@ -1,4 +1,4 @@
-name: CI
+name: Check
 
 on: [push]
 
@@ -20,10 +20,8 @@ jobs:
         if: steps.cache-npm-modules.outputs.cache-hit != 'true'
         run: npm install
       - name: Check type
-        run: npm run type-check
+        run: npm run type-check && npm run type-check-cypress
       - name: Lint
         run: npm run lint
       - name: Format
         run: npm run format
-      # - name: Test
-      #   run: npm run test

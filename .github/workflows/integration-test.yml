@@ -3,10 +3,12 @@ name: Integration Test
 on: [push]
 
 jobs:
-  check:
+  integration-test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
+
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:

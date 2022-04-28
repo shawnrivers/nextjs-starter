@@ -8,7 +8,9 @@ describe('Heading', () => {
 
     expect(getByText('test')).toBeInTheDocument();
     expect(container.firstChild).toMatchInlineSnapshot(`
-      <h1>
+      <h1
+        class="text-4xl font-bold"
+      >
         test
       </h1>
     `);

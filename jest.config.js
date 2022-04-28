@@ -11,6 +11,7 @@ const customJestConfig = {
   moduleNameMapper: {
     'app/(.*)$': '<rootDir>/src/$1',
   },
+  testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/cypress/'],
 };
 
 module.exports = createJestConfig(customJestConfig);

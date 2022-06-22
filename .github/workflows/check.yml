@@ -5,26 +5,19 @@ on: push
 jobs:
   main:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
-
       - uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 16
           cache: npm
-
       - name: Install dependencies
         run: npm install
-
       - name: Check type
         run: npm run type-check && npm run type-check-cypress
-
       - name: Lint
         run: npm run lint
-
       - name: Format
         run: npm run format
-
       - name: Test
         run: npm run test

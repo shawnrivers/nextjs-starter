@@ -1,4 +1,4 @@
-import { adder } from 'app/utils/adder';
+import { adder } from '@/utils/adder';
 
 describe('adder', () => {
   it('should return the correct sum', () => {

@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
-import { Heading } from 'app/components/Heading';
+import { Heading } from '@/components/Heading';
 
 describe('Heading', () => {
   it('should render h1 with the correct content', () => {

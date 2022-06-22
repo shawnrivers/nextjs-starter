@@ -1,4 +1,4 @@
-import { Heading } from 'app/components/Heading';
+import { Heading } from '@/components/Heading';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {

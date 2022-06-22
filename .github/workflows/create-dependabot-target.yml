@@ -8,7 +8,6 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
-
     steps:
       - name: Create Dependabot target branch
         uses: peterjgrainger/action-create-branch@v2.2.0

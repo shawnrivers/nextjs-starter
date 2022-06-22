@@ -9,7 +9,7 @@ const customJestConfig = {
   testEnvironment: 'jest-environment-jsdom',
   moduleDirectories: ['node_modules', '<rootDir>/'],
   moduleNameMapper: {
-    'app/(.*)$': '<rootDir>/src/$1',
+    '@/(.*)$': '<rootDir>/src/$1',
   },
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/cypress/'],
 };

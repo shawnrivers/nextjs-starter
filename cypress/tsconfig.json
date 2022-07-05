@@ -8,5 +8,5 @@
     "moduleResolution": "node",
     "types": ["cypress"]
   },
-  "include": ["./**/*.ts", "plugins/index.js", "support/index.js"]
+  "include": ["./**/*.ts", "plugins/index.js", "support/e2e.js"]
 }

@@ -9,8 +9,8 @@ on:
       - completed
 
 jobs:
-  if: ${{ github.event.workflow_run.conclusion == 'success' && gihub.actor === github.actor == 'dependabot[bot]' }}
   auto-merge:
+    if: github.event.workflow_run.conclusion == 'success' && gihub.actor === github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Prepare GitHub token

@@ -13,6 +13,8 @@ jobs:
         with:
           app_id: ${{ secrets.REPO_MANAGER_APP_ID }}
           private_key: ${{ secrets.REPO_MANAGER_PRIVATE_KEY }}
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Merge
         uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:

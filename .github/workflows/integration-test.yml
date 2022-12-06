@@ -13,7 +13,7 @@ jobs:
           node-version: 16
           cache: npm
       - name: Cypress run
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v5
         with:
           build: npm run build
           start: npm run start
